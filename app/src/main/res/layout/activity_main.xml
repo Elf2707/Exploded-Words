@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity"
+    android:background="@drawable/main_act_gradient"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="@dimen/dim_btns"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_single_play"
+            android:id="@+id/btn_single_play"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/dim_txt_btns"
+            android:textColor="@color/clr_main_gradient"
+            android:onClick="startSingleGame" />
+
+        <Button
+            android:layout_width="@dimen/dim_btns"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_multy_play"
+            android:id="@+id/btn_multi_play"
+            android:layout_below="@+id/btn_single_play"
+            android:layout_alignLeft="@+id/btn_single_play"
+            android:layout_alignStart="@+id/btn_single_play"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/dim_txt_btns"
+            android:textColor="@color/clr_main_gradient"
+            android:onClick="startMultiGame" />
+
+        <Button
+            android:layout_width="@dimen/dim_btns"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_score"
+            android:id="@+id/btn_score"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/dim_txt_btns"
+            android:textColor="@color/clr_main_gradient"
+            android:onClick="seeScore" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/mainLable"
+        android:text="@string/lbl_main"
+        android:textColor="@color/clr_main_lbl"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_main_lbl_text"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginBottom="43dp"
+        android:layout_centerHorizontal="true"
+        android:padding="0dp" />
+
+    <Button
+        android:layout_width="@dimen/dim_btns"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_settings"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/dim_txt_btns"
+        android:textColor="@color/clr_main_gradient"
+        android:onClick="settings"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

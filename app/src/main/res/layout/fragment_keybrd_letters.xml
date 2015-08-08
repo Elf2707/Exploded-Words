@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.elf.explodedwords.FragmentKeyboard">
+
+    <LinearLayout
+        android:id="@+id/layout_first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnA"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="А"
+            android:onClick="keyPress"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnB"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Б"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnV"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="В"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnG"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Г"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnD"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Д"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnE"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Е"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnEE"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ё"
+            android:textColor="@color/clr_main_gradient" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sec_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_first_line"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnJ"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ж"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnZ"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="З"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnI"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="И"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnII"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Й"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnK"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="К"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnL"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Л"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnM"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="М"
+            android:textColor="@color/clr_main_gradient" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ferd_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_sec_line"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnN"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Н"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnO"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="О"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnP"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="П"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnR"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Р"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnS"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="С"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnT"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Т"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnU"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="У"
+            android:textColor="@color/clr_main_gradient" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_foth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_ferd_line"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnF"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ф"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnX"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Х"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnC"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ц"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnCh"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ч"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnSh"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ш"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnSj"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Щ"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnQ"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ъ"
+            android:textColor="@color/clr_main_gradient" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_foth"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnW"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ы"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnQQ"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ь"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnE1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Э"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnJu"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ю"
+            android:textColor="@color/clr_main_gradient" />
+
+        <Button
+            android:id="@+id/btnJa"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Я"
+            android:textColor="@color/clr_main_gradient" />
+
+    </LinearLayout>
+
+</RelativeLayout>

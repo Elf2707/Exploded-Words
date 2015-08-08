@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="clr_main_lbl">#ffff861b</color>
+    <color name="clr_main_gradient">#ff49bdff</color>
+    <color name="clr_white">#ffffff</color>
+
+    <color name="clr_right">#FF82FFB3</color>
+    <color name="clr_wrong">#FFFF6084</color>
+</resources>

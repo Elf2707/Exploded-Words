@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- User name -->
+    <com.example.elf.explodedwords.ui.prefs.EditTextPrefWithVal
+        android:capitalize="words"
+        android:defaultValue="@string/pref_user_name_default"
+        android:hint="@string/pref_user_name_title"
+        android:inputType="textCapWords"
+        android:key="user_name"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:summary="@string/pref_user_name_summary"
+        android:title="@string/pref_user_name_title" />
+
+    <!-- Notification of the user who send the word. Not implemented yet -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="notification_user"
+        android:summary="@string/pref_notify_summary"
+        android:title="@string/pref_notifications_title"/>
+</PreferenceScreen>
